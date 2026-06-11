@@ -3,25 +3,44 @@ p {
 }
 
 p.info {
-	font-size: 10pt;
+	font-size: small;
+	background-color: #dfdfdf;
 }
 
 h1 {
-	background-color: #7f7fcf;
+	/*background-color: #7f7fcf;*/
+	color:white;
+	text-shadow: 0 0 10px navy;
 }
 
 h2 {
-	border: solid 1px black;
+	/*border: solid 1px black;*/
 	margin: 5px;
+	background: linear-gradient(.25turn, white, #ffefaf);
+	font-family: cursive;
+	color:#3f3faf;
 }
 
 div#zentai {
-	display: flex;
-	flex-direction: row;
-	width: 1024px;
+	display: grid;                      /* グリッドレイアウトにする*/
+    grid-template-columns: 1fr 1fr; /* 3列にする．幅は 1:2:2 の比率*/
+    grid-auto-rows: 200px;        /* 高さは 100px */
+    grid-gap: 10px;                     /* 隣り合う行（列）の間隔を 10px に*/
+	
+    width: 1000px;
+	
+	
+	/*background: linear-gradient(.25turn, white, #ffefaf);*/
 }
 
 div#zentai > div {
-	margin-left: 5px;
+	padding: 5px;
 	background-color: #ffefaf;
+}
+img.sign {
+    float: right;   /* 画像を右に浮かせる */
+
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 10px 10px;
 }

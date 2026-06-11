@@ -1,0 +1,9 @@
+.ta1 th,.ta1 td {
+    border: 1px solid;
+}
+.ta1 th {
+    background-color: yellow;
+}
+.a {
+    color: firebrick;
+}
