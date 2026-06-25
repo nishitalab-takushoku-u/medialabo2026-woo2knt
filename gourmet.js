@@ -1,4 +1,9 @@
-
+b=document.getElementById("kensaku");
+i=document.getElementById("key");
+b.addEventListener('click',search);
+function search(){
+  console.log("検索キー:"+i.value);
+}
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
   let i=1;
