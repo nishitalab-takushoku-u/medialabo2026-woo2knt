@@ -47,7 +47,7 @@ function printDom(data) {
     let tr=document.createElement('tr');
     bd.insertAdjacentElement('beforeend',tr);
     let td=[];
-    for(let k=0;k<9;k++){
+    for(let k=0;k<h.length;k++){
       td[k]=document.createElement('td');
       let f=h[k];
       //console.log(f+"iii");
