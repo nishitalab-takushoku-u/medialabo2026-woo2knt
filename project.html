@@ -5,22 +5,68 @@
     <meta charset="utf-8">
     <title>グルメ</title>
     <link rel="stylesheet" href="pro.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+	<script src="ajax-demo.js" defer></script>
     <script src="gourmet.js" defer></script>
   </head>
   <body>
     <h1>グルメ情報</h1>
-    <label for="key">検索キー:</label>
-    <input type="text" id="key">
     <button id="kensaku">検索</button>
+    <button id="reset">リセット</button>
+    <div></div>
+    <label for="key">名前:</label>
+    <input type="text" id="key">
+     <details id="chab">
+      <summary>ジャンル</summary>
+      <div class="list">
+        <label><input type="checkbox"> 居酒屋</label>
+    <label><input type="checkbox"> ダイニングバー・バル</label>
+    <label><input type="checkbox"> 創作料理</label>
+    <label><input type="checkbox"> 和食</label>
+    <label><input type="checkbox"> 洋食</label>
+    <label><input type="checkbox"> イタリアン・フレンチ</label>
+    <label><input type="checkbox"> 中華</label>
+    <label><input type="checkbox"> 焼肉・ホルモン</label>
+    <label><input type="checkbox"> アジア・エスニック料理</label>
+    <label><input type="checkbox"> 各国料理</label>
+    <label><input type="checkbox"> カラオケ・パーティ</label>
+    <label><input type="checkbox"> バー・カクテル</label>
+    <label><input type="checkbox"> ラーメン</label>
+    <label><input type="checkbox"> カフェ・スイーツ</label>
+    <label><input type="checkbox"> その他グルメ</label>
+    <label><input type="checkbox"> お好み焼き・もんじゃ</label>
+    <label><input type="checkbox"> 韓国料理</label>
+          </div>
+</details>
+<div>予算</div>
+<input type="range" id="bar" min="1000" max="10000" value="3000"><input type="number" id="num" size="5" min="1000" max="10000" value="3000"><label><input type="radio" name="on" id="budon">オン</label><label><input type="radio" name="on" id="budoff">オフ</label>
+<details id="subc">
+      <summary>サブジャンル</summary>
+      <div class="list">
+        <label><input type="checkbox">居酒屋</label>
+    <label><input type="checkbox">ダイニングバー・バル</label>
+    <label><input type="checkbox">創作料理</label>
+    <label><input type="checkbox">和食</label>
+    <label><input type="checkbox">洋食</label>
+    <label><input type="checkbox">イタリアン・フレンチ</label>
+    <label><input type="checkbox">中華</label>
+    <label><input type="checkbox">焼肉・ホルモン</label>
+    <label><input type="checkbox">アジア・エスニック料理</label>
+    <label><input type="checkbox">各国料理</label>
+    <label><input type="checkbox">カラオケ・パーティ</label>
+    <label><input type="checkbox">バー・カクテル</label>
+    <label><input type="checkbox">ラーメン</label>
+    <label><input type="checkbox">カフェ・スイーツ</label>
+    <label><input type="checkbox">その他グルメ</label>
+    <label><input type="checkbox">お好み焼き・もんじゃ</label>
+    <label><input type="checkbox">韓国料理</label>
+          </div>
+</details>
     <h2>八王子周辺で<span class="a"></span>件ヒットしました。</h2>
     <table class="ta1">
-        <thead><th>名前</th><th>アクセス</th><th>住所</th><th>予算</th><th>キャッチコピー</th><th>ジャンル</th><th>営業時間</th><th>最寄駅</th><th>サブジャンル</th></thead>
+        <thead><tr><th>名前</th><th>アクセス</th><th>住所</th><th>予算</th><th>キャッチコピー</th><th>ジャンル</th><th>営業時間</th><th>最寄駅</th><th>サブジャンル</th></tr></thead>
         <tbody id="bd">
-        <!--<tr>
-            
-            <tr>
-                <td>隠れ家バルFunny&Bouquet</td><td>JR八王子駅北口徒歩1分/京王八王子駅徒歩3分</td><td>東京都八王子市東町12-14</td><td>2001～3000円</td><td>2.5時間飲み放題付2000円~【★少人数様ソファー★】</td><td>居酒屋</td><td>月～日、祝日、祝前日：17:00～翌5:00（料理L.O.翌3:00ドリンクL.O.翌4:00）</td><td>八王子</td><td>ダイニングバー・バル</td>
-            </tr>-->
+        
         </tbody>
     </table>
   </body>

@@ -7,3 +7,12 @@
 .a {
     color: firebrick;
 }
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+
+.hidden {
+    display: none;
+}
